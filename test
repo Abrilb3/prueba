@@ -1,0 +1,59 @@
+
+
+
+     $filtro = "";
+     if (!empty($nRegistro)) {
+        $filtro .= " AND id LIKE '%$nRegistro%'";
+    }
+     if (!empty($exp)) {
+         $filtro .= " AND exp LIKE '%$exp%'";
+     }
+     if (!empty($tipo)) {
+         $filtro .= " AND tipo LIKE '%$tipo%'";
+     }
+     if (!empty($obj)){
+        $filtro .=" AND obj LIKE '%$obj%'" ;
+     }
+     if (!empty($nConfirm)) {
+        $filtro .= " AND nConfirm LIKE '%$nConfirm%'";
+    }
+     if (!empty($firmanteInt)) {
+        $filtro .= " AND firmanteInt LIKE '%$firmanteInt%'";
+    }
+     if (!empty($firmanteExt)) {
+         $filtro .= " AND firmanteExt LIKE '%$firmanteExt%'";
+     }
+     if (!empty($dniCuit)) {
+        $filtro .= " AND dniCuit LIKE '%$dniCuit%'";
+    }
+     if (!empty($personaJur)) {
+         $filtro .= " AND personaJur LIKE '%$personaJur%'";
+     }
+     if (!empty($cuit)) {
+        $filtro .= " AND cuit LIKE '%$cuit'";
+    }
+     if (!empty($lugSuscp)) {
+         $filtro .= " AND lugSuscp LIKE '%$lugSuscp%'";
+     }
+     if (!empty($fechaSuscp)) {
+         $filtro .= " AND fechaSuscp LIKE '%$fechaSuscp%'";
+     }
+     if (!empty($nConve)) {
+        $filtro .= " AND nConve LIKE '%$nConve%'";
+     }
+     if (!empty($nDispo)) {
+        $filtro .= " AND nDispo LIKE '%$nDispo%' ";
+     }
+     if (!empty($vigencia)) {
+        $filtro .= " AND vigencia LIKE '$vigencia' ";
+     }
+     if (!empty($renovacion)) {
+        $filtro .= " AND renovacion LIKE '%$renovacion%'";
+     } 
+     if(!empty($obs)){
+        $filtro.="AND obs LIKE'%$obs%'";
+     }
+
+ 
+ 
+ 
